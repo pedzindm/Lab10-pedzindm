@@ -12,6 +12,7 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+	  
 	when /fortunes/i
 	  '/fortune/random/'
 
