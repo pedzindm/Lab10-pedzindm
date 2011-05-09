@@ -11,5 +11,9 @@ get '/fortune/random/?' do
 	haml :fortune
 end
 
+get '/fortune/get/:fid' do
+	@fortune = params[:fid]
+end
+
 require 'fortunedata'
 end

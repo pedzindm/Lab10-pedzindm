@@ -15,6 +15,10 @@ module NavigationHelpers
 	  
 	when /fortunes/i
 	  '/fortune/random/'
+	  
+	when /fortune/get
+		'/fortune/get/:fid'
+	
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
