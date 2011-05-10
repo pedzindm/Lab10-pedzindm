@@ -11,8 +11,10 @@ get '/fortune/random/?' do
 	haml :fortune
 end
 
-get '/fortune/get/:fid' do
-	@fortune = params[:fid]
+get '/fortune/get/?' do |fid|
+	
+	@fortune = $fortunes[[:fid.to_i]]
+	haml :fortune
 end
 
 require 'fortunedata'

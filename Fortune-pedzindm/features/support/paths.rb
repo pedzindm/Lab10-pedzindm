@@ -11,13 +11,13 @@ module NavigationHelpers
     case page_name
 
     when /the home\s?page/
-      '/'
+		'/'
 	  
 	when /fortunes/i
-	  '/fortune/random/'
+		'/fortune/random/'
 	  
-	when /fortune/get
-		'/fortune/get/:fid'
+	when /fortunes/i
+		'/fortune/get/'
 	
 
     # Add more mappings here.
